@@ -307,6 +307,18 @@
     50%       { opacity: 0.3; }
   }
 
+
+  .topics { display: flex; flex-direction: column; gap: 10px; }
+  .topic {
+    display: flex; align-items: flex-start; gap: 10px;
+    font-size: 12.5px; color: #9A8F7A; line-height: 1.5;
+  }
+  .topic-check {
+    color: var(--gold); font-size: 12px; flex-shrink: 0; margin-top: 1px;
+  }
+  .topic-bonus { margin-top: 4px; }
+  .topic strong { color: var(--text); }
+
   /* Mobile */
   @media (max-width: 768px) {
     .wrapper {
@@ -346,40 +358,39 @@
 
     <div class="perks">
       <div class="perk">
-        <div class="perk-icon">◈</div>
-        <div>
-          <strong>Acesso Antecipado</strong>
-          Inscritos na lista ganham prioridade nas vagas e condições especiais de lançamento.
-        </div>
-      </div>
-      <div class="perk">
-        <div class="perk-icon">◇</div>
-        <div>
-          <strong>Conteúdo de Alto Nível</strong>
-          Metodologia aplicada, cases reais e ferramentas usadas por profissionais do mercado.
-        </div>
-      </div>
-      <div class="perk">
-        <div class="perk-icon">◉</div>
-        <div>
-          <strong>Turmas Limitadas</strong>
-          Vagas restritas para garantir atenção personalizada a cada aluno.
-        </div>
-      </div>
-      <div class="perk">
-        <div class="perk-icon">▶</div>
+        <div class="perk-icon">&#9654;</div>
         <div>
           <strong>Aulas ao Vivo</strong>
-          Sessões interativas em tempo real — tire dúvidas e aprenda na prática com o instrutor.
+          Sess&#245;es interativas em tempo real &mdash; tire d&#250;vidas e aprenda na pr&#225;tica.
         </div>
       </div>
       <div class="perk">
-        <div class="perk-icon">✦</div>
+        <div class="perk-icon">&#10022;</div>
         <div>
           <strong>Grupo Exclusivo no WhatsApp</strong>
-          Acesso a uma comunidade ativa de alunos para networking, análises e suporte contínuo.
+          Comunidade ativa de alunos para networking, an&#225;lises e suporte cont&#237;nuo.
         </div>
       </div>
+      <div class="perk">
+        <div class="perk-icon">&#9672;</div>
+        <div>
+          <strong>Vagas Limitadas</strong>
+          Inscritos na lista ganham prioridade e condi&#231;&#245;es especiais de lan&#231;amento.
+        </div>
+      </div>
+    </div>
+
+    <div class="divider" style="margin-top:32px;"></div>
+
+    <p style="font-size:10px; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold-dim); font-weight:600; margin-top:28px; margin-bottom:16px;">O que voc&#234; vai aprender</p>
+
+    <div class="topics">
+      <div class="topic"><span class="topic-check">&#10003;</span><span>An&#225;lise T&#233;cnica &mdash; leitura de gr&#225;ficos e price action</span></div>
+      <div class="topic"><span class="topic-check">&#10003;</span><span>Como operar a&#231;&#245;es na pr&#225;tica</span></div>
+      <div class="topic"><span class="topic-check">&#10003;</span><span>Mercado Americano &mdash; NYSE, NASDAQ e S&amp;P 500</span></div>
+      <div class="topic"><span class="topic-check">&#10003;</span><span>Melhores corretoras BR e EUA</span></div>
+      <div class="topic"><span class="topic-check">&#10003;</span><span>VIX &mdash; como operar o &#237;ndice do medo com Op&#231;&#245;es</span></div>
+      <div class="topic topic-bonus"><span class="topic-check" style="color:var(--gold);">&#9733;</span><span><strong>B&#244;nus exclusivos</strong> para alunos da lista de espera</span></div>
     </div>
   </div>
 
